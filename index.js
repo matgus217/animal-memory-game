@@ -96,5 +96,6 @@ function restart() {
     document.querySelector(".your-score").textContent = score;
     gridContainer.innerHTML = "";
     generateCards();
+
 }
 

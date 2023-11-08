@@ -52,6 +52,11 @@ p {
     position: relative;
     transform-style: preserve-3d;
     transition: all 0.5s ease-in-out;
+
+}
+
+.background {
+    background: url("../images/paw-print.png")
 }
 
 .front-image {
@@ -85,11 +90,9 @@ card .back {
     background-position: center center;
     background-size: cover;
     backface-visibility: hidden;
+
 }
 
 .card .front {
     transform: rotateY(180deg);
 }
-
-
-@media screen and (max-width: 768px) {}
