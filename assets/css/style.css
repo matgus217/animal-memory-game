@@ -13,14 +13,14 @@ h1 {
     text-align: center;
     font-weight: 700;
     font-size: 50px;
-    color: yellow;
+    color: blue;
 }
 
 p {
     text-align: center;
     font-size: 31px;
     font-weight: bold;
-    color: yellow;
+    color: blue;
 }
 
 .actions {
@@ -48,7 +48,7 @@ p {
     height: calc(140px / 2 * 3);
     width: 139px;
     border-radius: 11px;
-    background-color: white;
+    background-color: yellow;
     position: relative;
     transform-style: preserve-3d;
     transition: all 0.5s ease-in-out;
@@ -75,13 +75,13 @@ p {
 }
 
 .card .front {
+    background-color: lightgreen;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 card .back {
-    background-color: yellow;
     background-position: center center;
     background-size: cover;
     backface-visibility: hidden;
@@ -90,3 +90,6 @@ card .back {
 .card .front {
     transform: rotateY(180deg);
 }
+
+
+@media screen and (max-width: 768px) {}
