@@ -15,6 +15,7 @@ h1 {
     color: yellow;
 }
 
+
 p {
     text-align: center;
     font-size: 31px;
@@ -98,12 +99,58 @@ card .back {
 
 
 
-/* --------- Media queries */
-
 @media screen and (max-width: 768px) {
 
-    .h1 {
-        font-size: larger;
-        color: aqua;
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
     }
+
+    h1 {
+        float: left;
+        text-align: left;
+        font-size: 35px;
+    }
+
+
+    .grid-container {
+
+        grid-gap: 2px;
+        display: grid;
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        padding-right: 410px;
+    }
+}
+
+.card {
+
+    width: 90px;
+    height: 60px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    border: 4px solid blue;
+}
+
+
+
+audio {
+    padding-top: 10px;
+}
+
+.actions {
+    float: left;
+    width: 90px;
+    padding-top: 10px;
+
+}
+
+p {
+
+    float: left;
+    width: 60px;
+    padding-top: 50px;
+
+}
 }
