@@ -137,22 +137,20 @@ card .back {
 
     audio {
 
-        padding-top: 10px;
+        padding-top: 50px;
+        padding-left: 250px;
 
     }
 
     .actions {
 
-        float: left;
-        width: 90px;
-        padding-top: 10px;
-
+        padding-right: 50px;
     }
 
     p {
 
-        float: left;
-        width: 60px;
+        padding-left: 350px;
+        width: 80px;
 
 
     }
