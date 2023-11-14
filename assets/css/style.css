@@ -1,202 +1,357 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Playpen+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Playpen+Sans:wght@500&family=Titillium+Web:wght@300&display=swap');
 
 
-
-p {
-    font-size: 20px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #6563ff;
-}
-
-::selection {
-    color: #fff;
-    background: #6563ff;
-}
-
-.wrapper {
-    padding: 25px;
-    background: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.cards,
-.card,
-.view,
-.details,
-p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cards {
-    height: 350px;
-    width: 350px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.cards .card {
-    cursor: pointer;
+    height: 100vh;
+    background-color: darkorchid;
+    background-size: cover;
+    background-position: center;
     position: relative;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.open {
+    width: (100%);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.mainTag {
+    color: #c5c5c5;
+    font-weight: bolder;
+}
+
+.welcome {
+    color: #ffffff;
+    font-weight: 800;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.btn-handle {
+    border: 2px solid #2580b3;
+    color: #fff;
+}
+
+.btn-handle:hover {
+    background: linear-gradient(115.87deg, #14f1d9 0%, #3672f8 100%);
+}
+
+.headTag,
+.points>p {
+    color: yellow;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#point {
+    font-weight: 1300;
+}
+
+.memory-game {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
     perspective: 1000px;
+    z-index: -1;
+}
+
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
     transform-style: preserve-3d;
-    height: calc(100% / 4 - 10px);
-    width: calc(100% / 4 - 10px);
+    transition: transform 0.5s;
+    border-radius: 5px;
+    background-image: linear-gradient(-225deg, #76c3f0 0%, #2580b3 100%);
 }
 
-.card.shake {
-    animation: shake 0.35s ease-in-out;
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
 }
 
-@keyframes shake {
-
-    0%,
-    100% {
-        transform: translateX(0);
-    }
-
-    20% {
-        transform: translateX(-13px);
-    }
-
-    40% {
-        transform: translateX(13px);
-    }
-
-    60% {
-        transform: translateX(-8px);
-    }
-
-    80% {
-        transform: translateX(8px);
-    }
-}
-
-.cards .card .view {
-    width: 100%;
-    height: 100%;
-    user-select: none;
-    pointer-events: none;
-    position: absolute;
-    background: #fff;
-    border-radius: 7px;
-    backface-visibility: hidden;
-    transition: transform 0.25s linear;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-.card .front-view img {
-    max-width: 17px;
-}
-
-.card .back-view {
-    transform: rotateY(-180deg);
-}
-
-.card .back-view img {
-    max-width: 40px;
-}
-
-.card.flip .front-view {
+.memory-card.flip {
     transform: rotateY(180deg);
 }
 
-.card.flip .back-view {
-    transform: rotateY(0);
-}
-
-.details {
+.front-face,
+.back-face {
     width: 100%;
-    margin-top: 15px;
-    padding: 0 20px;
-    border-radius: 7px;
-    background: #fff;
-    height: calc(100% / 4 - 30px);
-    justify-content: space-between;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    border-radius: 5px;
+    backface-visibility: hidden;
 }
 
-.details p {
-    font-size: 18px;
-    height: 17px;
-    padding-right: 18px;
-    border-right: 1px solid #ccc;
+.front-face {
+    transform: rotateY(180deg);
 }
 
-.details p span {
-    margin-left: 8px;
+#won {
+    visibility: hidden;
+    border-radius: 10px;
+    background: #ffbdf1;
+    background-image: linear-gradient(to bottom, yellow 0%, darkorchid 100%);
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border: 5px solid #064d75;
 }
 
-.details p b {
-    font-weight: 500;
+#won>h1,
+#won p {
+    font-weight: bolder;
 }
 
-.details button {
-    cursor: pointer;
-    font-size: 14px;
-    color: #6563ff;
-    border-radius: 4px;
-    padding: 4px 11px;
-    background: #fff;
-    border: 2px solid #6563ff;
-    transition: 0.3s ease;
+#playAgain {
+    border: 2px solid #2580b3;
+    border-radius: 5px;
+    background: #2580b3;
 }
 
-.details button:hover {
-    color: #fff;
-    background: #6563ff;
+#playAgain:hover {
+    border: 2px solid #064d75;
+    background: linear-gradient(115.87deg, #14f1d9 0%, #3672f8 100%);
 }
 
-@media screen and (max-width: 700px) {
-    .cards {
-        height: 350px;
-        width: 350px;
+@media (min-width: 992px) {
+    .mainTag {
+        font-size: 80px;
+        margin-top: 60px;
     }
 
-    .card .front-view img {
-        max-width: 16px;
+    .welcome {
+        font-size: 35px;
     }
 
-    .card .back-view img {
-        max-width: 40px;
+    .btn-handle {
+        font-size: 40px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    .memory-game {
+        width: 640px;
+        height: 530px;
+    }
+
+    .front-face,
+    .back-face {
+        padding: 10px;
+    }
+
+    #won {
+        padding: 50px;
+    }
+
+    .headTag {
+        font-size: 70px;
+    }
+
+    .points>p,
+    #won>h1,
+    #won p,
+    #playAgain {
+        font-size: 35px;
     }
 }
 
-@media screen and (max-width: 530px) {
-    .cards {
-        height: 300px;
-        width: 300px;
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .mainTag {
+        font-size: 75px;
+        margin-top: 60px;
     }
 
-    .card .back-view img {
-        max-width: 35px;
+    .welcome {
+        font-size: 30px;
     }
 
-    .details {
-        margin-top: 10px;
-        padding: 0 15px;
-        height: calc(100% / 4 - 20px);
+    .btn-handle {
+        font-size: 35px;
+        padding: 10px 20px;
+        border-radius: 10px;
     }
 
-    .details p {
-        height: 15px;
-        font-size: 17px;
-        padding-right: 13px;
+    .memory-game {
+        width: 620px;
+        height: 512px;
     }
 
-    .details button {
-        font-size: 13px;
-        padding: 5px 10px;
-        border: none;
-        color: #fff;
-        background: #6563ff;
+    .front-face,
+    .back-face {
+        padding: 10px;
+    }
+
+    #won {
+        padding: 50px;
+        top: 40%;
+    }
+
+    .headTag {
+        font-size: 70px;
+    }
+
+    .points>p,
+    #won>h1,
+    #won p,
+    #playAgain {
+        font-size: 35px;
+    }
+}
+
+audio controls {
+    text-align: center;
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .mainTag {
+        font-size: 60px;
+        margin-top: 50px;
+    }
+
+    .welcome {
+        font-size: 25px;
+    }
+
+    .btn-handle {
+        font-size: 30px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    .memory-game {
+        width: 480px;
+        height: 398px;
+    }
+
+    .front-face,
+    .back-face {
+        padding: 6px;
+    }
+
+    #won {
+        padding: 35px;
+        top: 30%;
+    }
+
+    .headTag {
+        font-size: 50px;
+    }
+
+    .points>p,
+    #won>h1,
+    #won p,
+    #playAgain {
+        font-size: 30px;
+    }
+}
+
+
+@media (min-width: 378px) and (max-width: 575px) {
+    .mainTag {
+        font-size: 45px;
+        margin-top: 45px;
+    }
+
+    .welcome {
+        font-size: 25px;
+    }
+
+    .btn-handle {
+        font-size: 30px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    .memory-game {
+        width: 380px;
+        height: 315px;
+    }
+
+    .front-face,
+    .back-face {
+        padding: 6px;
+    }
+
+    #won {
+        padding: 30px;
+        top: 30%;
+    }
+
+    .headTag {
+        font-size: 45px;
+    }
+
+    .points>p,
+    #won>h1,
+    #won p,
+    #playAgain {
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 377px) {
+    .mainTag {
+        font-size: 45px;
+        margin-top: 40px;
+    }
+
+    .welcome {
+        font-size: 20px;
+    }
+
+    .btn-handle {
+        font-size: 30px;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+
+    .memory-game {
+        width: 340px;
+        height: 282px;
+    }
+
+    .front-face,
+    .back-face {
+        padding: 5px;
+    }
+
+    #won {
+        padding: 15px;
+        top: 30%;
+    }
+
+    .headTag {
+        font-size: 40px;
+    }
+
+    .points>p,
+    #won>h1,
+    #won p,
+    #playAgain {
+        font-size: 25px;
     }
 }

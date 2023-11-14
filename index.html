@@ -1,153 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Favicon-->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="index.js"></script>
-
+    
+   
     <!--Title-->
 
     <title>Animal Memory Game</title>
-  </head>
-  <!--Body-->
+</head>
+<!--Body-->
 
-  <body>
-    <div class="wrapper">
-      <ul class="cards">
-        <li class="card">
-          <div class="view front-view">
-            <img src="images/question.png" alt="icon" />
-          </div>
-          <div class="view back-view">
-            <img src="images/img1.png" alt="bird" />
-          </div>
-        </li>
-        <li class="card flip">
-          <div class="view front-view">
-            <img src="images/question.png" alt="icon" />
-          </div>
-          <div class="view back-view">
-            <img src="images/img2.png" alt="cat" />
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="images/question.png" alt="icon" />
-          </div>
-          <div class="view back-view">
-            <img src="images/img1.png" alt="bird" />
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="images/question.png" alt="icon" />
-          </div>
-          <div class="view back-view">
-            <img src="images/img2.png" alt="cat" />
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="images/question.png" alt="icon" />
-          </div>
-          <div class="view back-view">
-            <img src="images/img8.png" alt="lion" />
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="images/question.png" alt="icon" />
-          </div>
-          <div class="view back-view">
-            <img src="images/img5.png" alt="fox" />
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="images/question.png" alt="icon" />
-          </div>
-          <div class="view back-view">
-            <img src="images/img8.png" alt="lion" />
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="images/question.png" alt="icon" />
-          </div>
-          <div class="view back-view">
-            <img src="images/img5.png" alt="fox" />
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="images/question.png" alt="icon" />
-          </div>
-          <div class="view back-view">
-            <img src="images/img9.png" alt="pig" />
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="images/question.png" alt="icon" />
-          </div>
-          <div class="view back-view">
-            <img src="images/img3.png" alt="cow" />
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="images/question.png" alt="icon" />
-          </div>
-          <div class="view back-view">
-            <img src="images/img9.png" alt="pig" />
-          </div>
-        </li>
-        <li class="card">
-          <div class="view front-view">
-            <img src="images/question.png" alt="icon" />
-          </div>
-          <div class="view back-view">
-            <img src="images/img3.png" alt="cow" />
-          </div>
-        </li>
-        <div class="details">
-          <p class="time">
-            Time: <span><b>35</b>s</span>
-          </p>
-          <p class="flips">
-            Flips: <span><b>0</b></span>
-          </p>
-          <button>Try Again</button>
+<header>
+    <h1 class="text-center mt-4 mb-2 headTag">Animal Memory Game</h1>
+</header>
+<section class="container mx-auto">
+    <section class="mx-auto">
+        <div class="row">
+            <div class="col-12 text-center points">
+                <p>Animals Liberated:  <span id="point">0</span></p>
+            </div>
         </div>
-      </ul>
-    </div>
+
+        <div id="won" class="text-center">
+            <h1>You have found all animals!</h1>
+            <p>Animals Liberated: <span id="finalPoints">0</span></p>
+            <button class="btn" id="playAgain">Find them agian!</button>
+        </div>
+
+        <section class="memory-game">
+            <div class="memory-card" data-cards="card1" style="order: 4;">
+                <img class="front-face" src="Images/rabbit.png" alt="rabbit">
+                <img class="back-face" src="Images/paw-print.png" alt="paw">
+            </div>
+            <div class="memory-card" data-cards="card1" style="order: 8;">
+                <img class="front-face" src="Images/rabbit.png" alt="rabbit">
+                <img class="back-face" src="Images/paw-print.png" alt="paw">
+            </div>
+
+            <div class="memory-card" data-cards="card2" style="order: 2;">
+                <img class="front-face" src="Images/fox.png" alt="fox">
+                <img class="back-face" src="Images/paw-print.png" alt="paw">
+            </div>
+            <div class="memory-card" data-cards="card2" style="order: 3;">
+                <img class="front-face" src="Images/fox.png" alt="fox">
+                <img class="back-face" src="Images/paw-print.png" alt="paw">
+            </div>
+
+            <div class="memory-card" data-cards="card3" style="order: 0;">
+                <img class="front-face" src="Images/dog.png" alt="dog">
+                <img class="back-face" src="Images/paw-print.png" alt="paw">
+            </div>
+            <div class="memory-card" data-cards="card3" style="order: 4;">
+                <img class="front-face" src="Images/dog.png" alt="dog">
+                <img class="back-face" src="Images/paw-print.png" alt="paw">
+            </div>
+
+            <div class="memory-card" data-cards="card4" style="order: 2;">
+                <img class="front-face" src="Images/turtle.png" alt="turtle">
+                <img class="back-face" src="Images/paw-print.png" alt="paw">
+            </div>
+            <div class="memory-card" data-cards="card4" style="order: 10;">
+                <img class="front-face" src="Images/turtle.png" alt="turtle">
+                <img class="back-face" src="Images/paw-print.png" alt="paw">
+            </div>
+
+            <div class="memory-card" data-cards="card5" style="order: 7;">
+                <img class="front-face" src="Images/goat.png" alt="goat">
+                <img class="back-face" src="Images/paw-print.png" alt="paw">
+            </div>
+            <div class="memory-card" data-cards="card5" style="order: 10;">
+                <img class="front-face" src="Images/goat.png" alt="goat">
+                <img class="back-face" src="Images/paw-print.png" alt="paw">
+            </div>
+
+            <div class="memory-card" data-cards="card6" style="order: 5;">
+                <img class="front-face" src="Images/cat.png" alt="cat">
+                <img class="back-face" src="Images/paw-print.png" alt="paw">
+            </div>
+            <div class="memory-card" data-cards="card6" style="order: 8;">
+                <img class="front-face" src="Images/cat.png" alt="cat">
+            <img class="back-face" src="Images/paw-print.png" alt="paw">
+            </div>
+        </section>
+    </section>
+</section>
+
+
+
+    <script src="index.js"></script>
 
     <!--Audiofile-->
     <audio controls>
-      <source src="assets/audio/song.mp3" />
-      your browser dosen't support audiofiles
+        <source src="assets/audio/song.mp3" />
+        your browser dosen't support audiofiles
     </audio>
-  </body>
+</body>
+
 </html>
