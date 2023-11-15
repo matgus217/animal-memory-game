@@ -27,11 +27,11 @@
 
 - **Scoreboard**
 - The game has a scoreboard that shows how many animals the user has liberated. If the user take the wrong card, the user loses points and vice versa.
-- As you see, the firts image has a score of - 4 and the second image has a score of 7.
+- As you see, the firts image has a score of - 2 and the second image has a score of 2.
 
-![Skärmavbild 2023-11-14 kl  11 34 49](https://github.com/matgus217/animal-memory-game/assets/147818054/76e62cf8-8955-4388-a09c-c5365d080a01)
 
-![Skärmavbild 2023-11-14 kl  11 35 35](https://github.com/matgus217/animal-memory-game/assets/147818054/bb28503b-65d4-4a46-80a9-d38128e79142)
+
+
 
 - **Result**
 - When the game is over and the user has found all the hidden animals a box will appear.
