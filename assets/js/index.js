@@ -6,7 +6,6 @@ const finalScore = document.getElementById("finalPoints");
 const won = document.getElementById("won");
 const play = document.getElementById("playAgain");
 const button = document.getElementsByClassName("btn-handle");
-
 const body = document.getElementsByTagName("body")[0];
 
 var points = 0;
