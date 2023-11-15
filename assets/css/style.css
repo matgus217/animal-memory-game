@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-
+/* body style */
 body {
     height: 100vh;
     background-color: darkorchid;
@@ -17,6 +17,7 @@ body {
     font-family: 'Playpen Sans', cursive;
 }
 
+/* open */
 .open {
     width: 100%;
     display: block;
@@ -47,6 +48,7 @@ body {
     background: linear-gradient(115.87deg, lightblue 0%, lightblue 100%);
 }
 
+/*points*/
 .headTag,
 .points>p {
     color: yellow;
@@ -58,6 +60,7 @@ body {
     font-weight: 1000;
 }
 
+/*memoty-game*/
 .memory-game {
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
@@ -89,6 +92,7 @@ body {
     transform: rotateY(180deg);
 }
 
+/*front-face*/
 .front-face,
 .back-face {
     width: 100%;
@@ -103,6 +107,7 @@ body {
     transform: rotateY(180deg);
 }
 
+/*won */
 #won {
     visibility: hidden;
     border-radius: 10px;
@@ -123,6 +128,7 @@ body {
     font-weight: bolder;
 }
 
+/*playAgain*/
 #playAgain {
     border: 2px solid blue;
     border-radius: 5px;
@@ -134,6 +140,7 @@ body {
     background: linear-gradient(115.87deg, #14f1d9 0%, #3672f8 100%);
 }
 
+/* Media query */
 @media (min-width: 992px) {
     .mainTag {
         font-size: 80px;
@@ -177,7 +184,7 @@ body {
 }
 
 
-
+/* Media query */
 @media (min-width: 768px) and (max-width: 991px) {
     .mainTag {
         font-size: 75px;
@@ -225,7 +232,7 @@ audio controls {
     text-align: center;
 }
 
-
+/* Media query */
 @media (min-width: 576px) and (max-width: 767px) {
     .mainTag {
         font-size: 60px;
@@ -269,7 +276,7 @@ audio controls {
     }
 }
 
-
+/* Media query */
 @media (min-width: 378px) and (max-width: 575px) {
     .mainTag {
         font-size: 45px;
@@ -313,7 +320,7 @@ audio controls {
     }
 }
 
-
+/* Media query */
 @media (max-width: 377px) {
     .mainTag {
         font-size: 45px;
