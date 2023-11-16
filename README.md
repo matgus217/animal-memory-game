@@ -29,8 +29,10 @@
 - The game has a scoreboard that shows how many animals the user has liberated. If the user take the wrong card, the user loses points and vice versa.
 - As you see, the firts image has a score of - 2 and the second image has a score of 2.
 
+![Skärmavbild 2023-11-16 kl  06 51 14](https://github.com/matgus217/animal-memory-game/assets/147818054/52fd1a6d-680a-4b49-9d60-824bab041e8d)
 
 
+![Skärmavbild 2023-11-15 kl  15 58 31](https://github.com/matgus217/animal-memory-game/assets/147818054/82fa7ce8-f88e-4c17-a3ae-e9b3e911606b)
 
 
 - **Result**
@@ -39,7 +41,8 @@
 - It also has a button that says "Find them again!".
 - If the user press the button the game will start all over again.
 
-![Skärmavbild 2023-11-14 kl  11 31 38](https://github.com/matgus217/animal-memory-game/assets/147818054/bd725962-ab88-453d-b448-23ebb7d42996)
+![Skärmavbild 2023-11-15 kl  16 00 10](https://github.com/matgus217/animal-memory-game/assets/147818054/4073288b-ca6a-4088-8f07-1dd7657fb152)
+
 
 ## Desing
 - **Typography**
@@ -76,7 +79,9 @@
 - I used Lighthouse within the Chrome Developer Tools to test performance, accesibility, best practices and SEO of the website for both desktop and mobile.
 - Mobile:
 
-![Skärmavbild 2023-11-14 kl  13 35 49](https://github.com/matgus217/animal-memory-game/assets/147818054/aa7d7dc2-fea4-49f5-aaa9-f9d5f58d9524)
+![Skärmavbild 2023-11-14 kl  13 35 49](https://github.com/matgus217/animal-memory-game/assets/147818054/4e3f63dd-0383-4e6b-afe1-59813bda1f67)
+
+
 
 - Desktop:
 
@@ -86,15 +91,18 @@
 
 #### Mobile:
 
-![Skärmavbild 2023-11-14 kl  13 40 20](https://github.com/matgus217/animal-memory-game/assets/147818054/3b45669a-9b68-4342-9c3e-1d2b4c061b4a)
+![Skärmavbild 2023-11-16 kl  06 59 01](https://github.com/matgus217/animal-memory-game/assets/147818054/d7d0e259-5791-4eb9-93b9-b765d764f5a3)
+
 
 #### Tablets:
 
-![Skärmavbild 2023-11-14 kl  13 40 48](https://github.com/matgus217/animal-memory-game/assets/147818054/000b4e65-c488-4e1a-9c43-8e0bd3423321)
+![Skärmavbild 2023-11-16 kl  06 58 36](https://github.com/matgus217/animal-memory-game/assets/147818054/5f49a42c-b9a9-44ed-afeb-b30e7429e45d)
+
 
 #### Laptopts:
 
-![Skärmavbild 2023-11-14 kl  13 42 58](https://github.com/matgus217/animal-memory-game/assets/147818054/138dd234-4ff5-45c7-b70e-1eab11d8e0d1)
+![Skärmavbild 2023-11-16 kl  06 59 25](https://github.com/matgus217/animal-memory-game/assets/147818054/7b6ab917-993c-4e22-831d-06fcda1738ee)
+
 
 ### Bugs
 
@@ -106,8 +114,7 @@
 - From the source section drop-down menu, select the Master Branch
 
   The link to the live website is here:
-<https://matgus217.github.io/animal-memory-game/>
-
+  <https://matgus217.github.io/animal-memory-game/>
 
 ## Credits
 
