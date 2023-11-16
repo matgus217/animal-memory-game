@@ -79,13 +79,15 @@
 - I used Lighthouse within the Chrome Developer Tools to test performance, accesibility, best practices and SEO of the website for both desktop and mobile.
 - Mobile:
 
-![Skärmavbild 2023-11-14 kl  13 35 49](https://github.com/matgus217/animal-memory-game/assets/147818054/4e3f63dd-0383-4e6b-afe1-59813bda1f67)
+![Skärmavbild 2023-11-16 kl  07 08 30](https://github.com/matgus217/animal-memory-game/assets/147818054/71031d75-91c2-48a5-b06e-32c141d8a687)
+
 
 
 
 - Desktop:
 
-![Skärmavbild 2023-11-14 kl  13 38 23](https://github.com/matgus217/animal-memory-game/assets/147818054/f322adde-5e1b-420a-b27f-eddcf80d6800)
+![Skärmavbild 2023-11-16 kl  07 06 14](https://github.com/matgus217/animal-memory-game/assets/147818054/9422a4f0-4db3-4b2d-8c24-e043a92cca17)
+
 
 ### How does it look on different screen sizes?
 
